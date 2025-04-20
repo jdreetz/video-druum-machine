@@ -1,6 +1,8 @@
 # Video Druum Machine
 
 A creative web application that turns YouTube videos into an interactive drum machine/step sequencer. Create unique musical compositions by triggering video segments in a grid-based interface.
+![image](https://github.com/user-attachments/assets/fe2a26f2-e3c1-4e89-88c4-acd5d1a06650)
+
 
 ## Features
 
