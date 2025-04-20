@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Druum Machine
+
+A creative web application that turns YouTube videos into an interactive drum machine/step sequencer. Create unique musical compositions by triggering video segments in a grid-based interface.
+
+## Features
+
+### Three-State Step Sequencer
+- **Play State (Blue)**: Triggers video playback from the row's start time
+- **Stop State (Orange)**: Halts video playback
+- **Off State (Gray)**: No action
+- Click to cycle through states: Off → Play → Stop → Off
+- Quarter notes have darker background when off
+
+### Floating Video Player
+- Draggable window with title bar
+- Fullscreen support (⤨/⤧ buttons)
+- Clean YouTube player interface
+- Auto-switching between active video tracks
+- Hover-reveal controls in fullscreen mode
+
+### Time Control
+- Precise time input (mm:ss.ms format)
+- Debounced updates for smooth operation
+- Real-time input validation
+- Start/end time validation
+- Immediate visual feedback
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/jdreetz/video-druum-machine.git
+cd video-druum-machine
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Built With
+- Next.js
+- TypeScript
+- YouTube Player API
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+The application is deployed on Netlify and can be accessed at: https://video-druum-machine.windsurf.build
